@@ -1,0 +1,8 @@
+<!-- deep-face.component.html -->
+<p>deep-face works!</p>
+
+<input type="file" (change)="onFileSelected($event)" />
+<button (click)="processImage()">Process Image</button>
+
+<h1>Processed Image</h1>
+<img *ngIf="processedImage" [src]="processedImage" alt="Processed Image" />
